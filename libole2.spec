@@ -1,12 +1,16 @@
 Summary:	Structured Storage OLE2 library
 Name:		libole2
 Version:	0.2.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	Разработка/Библиотеки
+Group(uk):	Розробка/Б╕бл╕отеки
 Source0:	ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{version}.tar.gz
 BuildRequires:	glib-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,6 +24,8 @@ AbiSuite and by other programs.
 Summary:	Libraries, includes, etc to develop libole2 applications
 Group:		X11/Libraries
 Group(de):	X11/Libraries
+Group(es):	X11/Bibliotecas
+Group(fr):	X11/Librairies
 Group(pl):	X11/Biblioteki
 Requires:	%{name} = %{version}
 
@@ -31,6 +37,8 @@ applications.
 Summary:	Libole2 static libraries
 Group:		X11/Libraries
 Group(de):	X11/Libraries
+Group(es):	X11/Bibliotecas
+Group(fr):	X11/Librairies
 Group(pl):	X11/Biblioteki
 Requires:	%{name} = %{version}
 
