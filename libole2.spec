@@ -114,8 +114,8 @@ Bibliotecas estáticas para desenvolvimento com libole2
 rm -f missing
 libtoolize --copy --force
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
