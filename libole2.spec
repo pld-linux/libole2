@@ -11,8 +11,6 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{versio
 BuildRequires:	glib-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-
 %description
 A library containing functionality to manipulate OLE2 Structured
 Storage files. It is used by Gnumeric from Gnome, AbiWord from
