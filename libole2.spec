@@ -106,9 +106,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	libole2aclocaldir=%{_aclocaldir}
-install -d $RPM_BUILD_ROOT%{_prefix}/X11R6/lib
-# that's where gnome-config will be looking for it
-mv $RPM_BUILD_ROOT%{_libdir}/libole2Conf.sh $RPM_BUILD_ROOT%{_prefix}/X11R6/lib
+
 gzip -9nf README doc/*.txt
 
 %clean
@@ -128,7 +126,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/libole2-config
 %attr(755,root,root) %{_libdir}/lib*.so
 %attr(755,root,root) %{_libdir}/lib*.la
-%{_prefix}/X11R6/lib/libole2Conf.sh
+%{_libdir}/libole2Conf.sh
 %{_aclocaldir}/*
 %{_includedir}/*
 
