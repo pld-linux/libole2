@@ -1,7 +1,7 @@
 Summary:	Structured Storage OLE2 library
 Name:		libole2
 Version:	0.2.3
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
@@ -62,13 +62,10 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/X11R6/lib
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	libole2aclocaldir=%{_aclocaldir}
-
-mv $RPM_BUILD_ROOT/%{_libdir}/libole2Conf.sh $RPM_BUILD_ROOT/usr/X11R6/lib
 
 gzip -9nf README doc/*.txt
 
@@ -88,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz doc/{*.txt.gz,html/*}
 %attr(755,root,root) %{_bindir}/libole2-config
 %attr(755,root,root) %{_libdir}/lib*.so
-%attr(755,root,root) /usr/X11R6/lib/libole2Conf.sh
+%attr(755,root,root) %{_libdir}/libole2Conf.sh
 %{_aclocaldir}/*
 %{_includedir}/*
 
