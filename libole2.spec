@@ -1,6 +1,6 @@
 Summary:	Structured Storage OLE2 library
 Name:		libole2
-Version:	0.2.2
+Version:	0.2.3
 Release:	1
 License:	GPL
 Group:		Development/Libraries
