@@ -5,16 +5,18 @@ Summary(pt_BR):	libole2 fornece uma API para acessar objetos OLE2
 Summary(ru):	Библиотека структурированного хранения OLE2
 Summary(uk):	Б╕бл╕отека структурованого збер╕гання OLE2
 Name:		libole2
-Version:	0.2.4
-Release:	4
+Version:	2.2.8
+Release:	1
 License:	GPL
-Group:		Development/Libraries
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libole2/0.2/%{name}-%{version}.tar.bz2
-# Source0-md5:	1370a4cea876e8579c1052992ae75f79
+Group:		Libraries
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libole2/2.2/%{name}-%{version}.tar.bz2
+Patch0:		%{name}-acfix.patch
+# Source0-md5:	0db6170f45795bf3e34f12d52bb598a1
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	glib-devel
+BuildRequires:	glib2-devel >= 1.3.10
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -63,7 +65,7 @@ Summary(pl):	Pliki nagЁСwkowe do tworzenia aplikacji u©ywaj╠cych libole2
 Summary(pt_BR):	Bibliotecas e outros arquivos necessАrios para desenvolvimento
 Summary(ru):	Файлы для разработки приложений, использующих libole2
 Summary(uk):	Файли для розробки програм, як╕ користуються libole2
-Group:		X11/Libraries
+Group:		Development/Libraries
 Requires:	%{name} = %{version}
 
 %description devel
@@ -88,7 +90,7 @@ Summary(pl):	Statyczne biblioteki libole2
 Summary(pt_BR):	Bibliotecas estАticas para desenvolvimento com libole2
 Summary(ru):	Статические библиотеки для разработки приложений, использующих libole2
 Summary(uk):	Статичн╕ б╕бл╕отеки для розробки програм, як╕ користуються libole2
-Group:		X11/Libraries
+Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
 %description static
@@ -110,12 +112,13 @@ Bibliotecas estАticas para desenvolvimento com libole2
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
@@ -124,8 +127,7 @@ rm -f missing
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	libole2aclocaldir=%{_aclocaldir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -135,18 +137,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
-%{_datadir}/libole2
 
 %files devel
 %defattr(644,root,root,755)
-%doc doc/html/* README doc/*.txt
-%attr(755,root,root) %{_bindir}/libole2-config
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
-%{_libdir}/libole2Conf.sh
-%{_aclocaldir}/*
-%{_includedir}/*
+%{_includedir}/libole2-2.0
+%{_pkgconfigdir}/*.pc
 
 %files static
 %defattr(644,root,root,755)
