@@ -1,6 +1,6 @@
 Summary:	Structured Storage OLE2 library
 Name:		libole2
-Version:	0.2.1
+Version:	0.2.2
 Release:	1
 License:	GPL
 Group:		Development/Libraries
@@ -57,7 +57,7 @@ gzip -9nf README \
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
+%post   -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
 %files
