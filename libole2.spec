@@ -41,6 +41,8 @@ Libole2 static libraries.
 %setup -q
 
 %build
+aclocal
+autoconf
 %configure
 %{__make}
 
