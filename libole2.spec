@@ -7,13 +7,6 @@ Version:	0.2.4
 Release:	4
 License:	GPL
 Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(es):	Desarrollo/Bibliotecas
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
-Group(pt_BR):	Desenvolvimento/Bibliotecas
-Group(ru):	Разработка/Библиотеки
-Group(uk):	Розробка/Б╕бл╕отеки
 Source0:	ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{version}.tar.bz2
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -46,13 +39,6 @@ Summary:	Includes etc. to develop libole2 applications
 Summary(pl):	Pliki nagЁСwkowe do tworzenia aplikacji u©ywaj╠cych libole2
 Summary(pt_BR):	Bibliotecas e outros arquivos necessАrios para desenvolvimento
 Group:		X11/Libraries
-Group(de):	X11/Libraries
-Group(es):	X11/Bibliotecas
-Group(fr):	X11/Librairies
-Group(pl):	X11/Biblioteki
-Group(pt_BR):	X11/Bibliotecas
-Group(ru):	X11/Библиотеки
-Group(uk):	X11/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
@@ -70,13 +56,6 @@ Summary:	Libole2 static libraries
 Summary(pl):	Statyczne biblioteki libole2
 Summary(pt_BR):	Bibliotecas estАticas para desenvolvimento com libole2
 Group:		X11/Libraries
-Group(de):	X11/Libraries
-Group(es):	X11/Bibliotecas
-Group(fr):	X11/Librairies
-Group(pl):	X11/Biblioteki
-Group(pt_BR):	X11/Bibliotecas
-Group(ru):	X11/Библиотеки
-Group(uk):	X11/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
