@@ -12,7 +12,10 @@ Group(pt_BR):	Desenvolvimento/Bibliotecas
 Group(ru):	Разработка/Библиотеки
 Group(uk):	Розробка/Б╕бл╕отеки
 Source0:	ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	glib-devel
+BuildRequires:	libtool
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -49,8 +52,11 @@ Libole2 static libraries.
 %setup -q
 
 %build
+rm -f missing
+libtoolize --copy --force
 aclocal
 autoconf
+automake -a -c
 %configure
 %{__make}
 
