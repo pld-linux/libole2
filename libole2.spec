@@ -113,7 +113,7 @@ Bibliotecas estáticas para desenvolvimento com libole2
 %build
 rm -f missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
