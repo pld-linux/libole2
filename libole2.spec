@@ -1,7 +1,7 @@
 Summary:	Structured Storage OLE2 library
 Name:		libole2
 Version:	0.1.6
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Libraries
 Group(pl):	Programowanie/Biblioteki
@@ -9,6 +9,9 @@ Group(fr):	Development/Librairies
 Source0:	ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{version}.tar.gz
 BuildRequires:	glib-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_prefix		/usr/X11R6
+%define		_datadir	/usr/share
 
 %description
 A library containing functionality to manipulate OLE2 Structured
