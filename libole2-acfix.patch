@@ -1,0 +1,21 @@
+--- libole2-2.2.8/configure.in.orig	2002-03-29 18:31:50.000000000 +0100
++++ libole2-2.2.8/configure.in	2003-12-28 12:21:37.355740848 +0100
+@@ -94,7 +94,6 @@
+ Makefile
+ libole2/Makefile
+ libole2/libole2.h
+-doc/Makefile
+ test/Makefile
+ libole2/version.c
+ libole2-2.0.pc
+--- libole2-2.2.8/libole2/Makefile.am.orig	2002-01-23 08:43:23.000000000 +0100
++++ libole2-2.2.8/libole2/Makefile.am	2003-12-28 12:38:41.979974288 +0100
+@@ -27,7 +27,7 @@
+ 
+ lib_LTLIBRARIES = libgnomeole2.la
+ 
+-LDADD = $(LIBOLE2_LIBS)
++libgnomeole2_la_LIBADD = $(LIBOLE2_LIBS)
+ 
+ libgnomeole2_la_LDFLAGS = \
+ 	-version-info $(VERSION_INFO)
