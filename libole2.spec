@@ -2,6 +2,8 @@ Summary:	Structured Storage OLE2 library
 Summary(es):	libole2 fornece una API para acessar objetos OLE2
 Summary(pl):	Biblioteka obsЁuguj╠ca obiekty OLE2
 Summary(pt_BR):	libole2 fornece uma API para acessar objetos OLE2
+Summary(ru):	Библиотека структурированного хранения OLE2
+Summary(uk):	Б╕бл╕отека структурованого збер╕гання OLE2
 Name:		libole2
 Version:	0.2.4
 Release:	4
@@ -34,10 +36,32 @@ libole2 fornece uma API para acessar objetos OLE2 como И usado nos
 componentes da Microsoft. Alguns exemplos que usam este sistema sЦo os
 formatos dos aplicativos Excel, Word, Powerpoint e Visio.
 
+%description -l ru
+Современные приложения имеют потребность в сохранении множества типов
+данных. Один из способов достичь этого - использовать подход "файловая
+система внутри файла".
+
+Внутри OLE2 файла есть "потоки" (файлы) и каталоги. Используя libole2
+можно легко путешествовать такой файловой системой, создавать,
+записывать, читать и удалять в ней файлы, создавать и удалять
+каталоги.
+
+%description -l uk
+Сучасн╕ прикладн╕ програми мають необх╕дн╕сть збер╕гати багато тип╕в
+даних. Один ╕з способ╕в досягти цього - використовувати п╕дх╕д
+"файлова система всередин╕ файлу".
+
+Всередин╕ OLE2 файлу ╓ "потоки" (файли) та каталоги. Використовуючи
+libole2 можна легко подорожувати такою файловою системою, створювати,
+записувати, читати та видаляти в н╕й файли, створювати та видаляти
+каталоги.
+
 %package devel
 Summary:	Includes etc. to develop libole2 applications
 Summary(pl):	Pliki nagЁСwkowe do tworzenia aplikacji u©ywaj╠cych libole2
 Summary(pt_BR):	Bibliotecas e outros arquivos necessАrios para desenvolvimento
+Summary(ru):	Файлы для разработки приложений, использующих libole2
+Summary(uk):	Файли для розробки програм, як╕ користуються libole2
 Group:		X11/Libraries
 Requires:	%{name} = %{version}
 
@@ -51,10 +75,18 @@ Pliki nagЁСwkowe i inne do tworzenia aplikacji u©ywaj╠cych libole2.
 Bibliotecas e arquivos de inclusЦo necessАrios para o desenvolvimento
 de aplicaГУes baseadas na libole2.
 
+%description devel -l ru
+Файлы для разработки приложений, использующих возможности libole2.
+
+%description devel -l uk
+Файли для розробки програм, як╕ користуються можливостями libole2.
+
 %package static
 Summary:	Libole2 static libraries
 Summary(pl):	Statyczne biblioteki libole2
 Summary(pt_BR):	Bibliotecas estАticas para desenvolvimento com libole2
+Summary(ru):	Статические библиотеки для разработки приложений, использующих libole2
+Summary(uk):	Статичн╕ б╕бл╕отеки для розробки програм, як╕ користуються libole2
 Group:		X11/Libraries
 Requires:	%{name}-devel = %{version}
 
@@ -66,6 +98,14 @@ Statyczne biblioteki libole2.
 
 %description static -l pt_BR
 Bibliotecas estАticas para desenvolvimento com libole2
+
+%description static -l ru
+Статические библиотеки для разработки приложений, использующих
+возможности libole2.
+
+%description static -l uk
+Статичн╕ б╕бл╕отеки для розробки програм, як╕ користуються
+можливостями libole2.
 
 %prep
 %setup -q
