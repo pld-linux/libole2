@@ -1,32 +1,40 @@
-Summary: Structured Storage OLE2 library
-Name: libole2
-Version: 0.1.6
-Release: 1
-Group: Development/Libraries
-Copyright: GPL
-Source: ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{version}.tar.gz
-Buildroot: /var/tmp/%{name}-%{version}-%{release}-root
+Summary:	Structured Storage OLE2 library
+Name:		libole2
+Version:	0.1.6
+Release:	1
+License:	GPL
+Group:		Development/Libraries
+Group(pl):	Programowanie/Biblioteki
+Group(fr):	Development/Librairies
+Source0:	ftp://ftp.gnome.org/pub/GNOME/unstable/sources/libole2/%{name}-%{version}.tar.gz
+BuildRequires:	glib-devel
+Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A library containing functionality to manipulate OLE2 Structured Storage files. It is used by Gnumeric from Gnome, AbiWord from AbiSuite and by other programs.
+A library containing functionality to manipulate OLE2 Structured
+Storage files. It is used by Gnumeric from Gnome, AbiWord from
+AbiSuite and by other programs.
 
 %package devel
-Summary: Libraries, includes, etc to develop libole2 applications
-Group: X11/Libraries
-Requires: libole2
+Summary:	Libraries, includes, etc to develop libole2 applications
+Group:		X11/Libraries
+Group(pl):	X11/Biblioteki
+Requires:	%{name} = %{verson}
 
 %description devel
-Libraries, include files, etc you can use to develop libole2 applications.
+Libraries, include files, etc you can use to develop libole2
+applications.
 
 %package static
-Summary:	Static libraries
-Group: X11/Libraries
-Requires: libole2-devel
+Summary:	Libole2 static libraries
+Group:		X11/Libraries
+Group(pl):	X11/Biblioteki
+Requires:	%{name} = %{verson}
 
 %description static
+Libole2 static libraries.
 
 %prep
-
 %setup -q
 
 %build
@@ -35,35 +43,31 @@ Requires: libole2-devel
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_libdir}
-make prefix=$RPM_BUILD_ROOT%{_prefix} libdir=$RPM_BUILD_ROOT%{_libdir} \
-  includedir=$RPM_BUILD_ROOT%{_includedir} \
-  datadir=$RPM_BUILD_ROOT%{_datadir} \
-  bindir=$RPM_BUILD_ROOT%{_bindir} \
-  install
+
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/lib*.so.*.*
+
+gzip -9nf README \
+	doc/{*txt,html/*}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
-%{_libdir}/lib*.so.*
+%attr(755,root,root) %{_libdir}/lib*.so.*.*
 %{_datadir}/*
 
 %files devel
 %defattr(644,root,root,755)
+%doc *.gz doc/{*txt,html/*}.gz
 %attr(755,root,root) %{_bindir}/libole2-config
-%{_libdir}/lib*.so
-%{_libdir}/*.sh
+%attr(755,root,root) %{_libdir}/lib*.so
+%attr(755,root,root) %{_libdir}/*.sh
+%{_aclocaldir}/*
 %{_includedir}/*
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/*a
-
-%changelog
-* Wed Jun 28 2000 Arturo Tena <arturo@directmail.org>
-- Updated summary and description.
-* Sun May 23 2000 John Gotts <jgotts@linuxsavvy.com>
-- New SPEC file.
+%{_libdir}/lib*.a
