@@ -1,7 +1,9 @@
 Summary:	Structured Storage OLE2 library
+Summary(es):	libole2 fornece una API para acessar objetos OLE2
+Summary(pt_BR):	libole2 fornece uma API para acessar objetos OLE2
 Name:		libole2
 Version:	0.2.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
@@ -23,30 +25,64 @@ A library containing functionality to manipulate OLE2 Structured
 Storage files. It is used by Gnumeric from Gnome, AbiWord from
 AbiSuite and by other programs.
 
+%description -l es
+libole2 fornece una API para acessar objetos OLE2 como È usado nos
+componentes da Microsoft. Algunos ejemplos que usan este sistema s„o
+os formatos dos aplicativos Excel, Word, Powerpoint e Visio.
+
+%description -l pt_BR
+libole2 fornece uma API para acessar objetos OLE2 como È usado nos
+componentes da Microsoft. Alguns exemplos que usam este sistema s„o os
+formatos dos aplicativos Excel, Word, Powerpoint e Visio.
+
 %package devel
 Summary:	Libraries, includes, etc to develop libole2 applications
+Summary(es):	Libraries, includes, etc to develop libole2 applications
+Summary(pt_BR):	Bibliotecas e outros arquivos necess·rios para desenvolvimento
 Group:		X11/Libraries
 Group(de):	X11/Libraries
 Group(es):	X11/Bibliotecas
 Group(fr):	X11/Librairies
 Group(pl):	X11/Biblioteki
+Group(pt_BR):	X11/Bibliotecas
+Group(ru):	X11/‚…¬Ã…œ‘≈À…
+Group(uk):	X11/‚¶¬Ã¶œ‘≈À…
 Requires:	%{name} = %{version}
 
 %description devel
 Libraries, include files, etc you can use to develop libole2
 applications.
 
+%description -l es devel
+Libraries, include files, etc you can use to develop libole2
+applications.
+
+%description -l pt_BR devel
+Bibliotecas e arquivos de inclus„o necess·rios para o desenvolvimento
+de aplicaÁıes baseadas na libole2.
+
 %package static
 Summary:	Libole2 static libraries
+Summary(es):	Static libraries for libole2 development
+Summary(pt_BR):	Bibliotecas est·ticas para desenvolvimento com libole2
 Group:		X11/Libraries
 Group(de):	X11/Libraries
 Group(es):	X11/Bibliotecas
 Group(fr):	X11/Librairies
 Group(pl):	X11/Biblioteki
+Group(pt_BR):	X11/Bibliotecas
+Group(ru):	X11/‚…¬Ã…œ‘≈À…
+Group(uk):	X11/‚¶¬Ã¶œ‘≈À…
 Requires:	%{name}-devel = %{version}
 
 %description static
 Libole2 static libraries.
+
+%description -l es static
+Static libraries for libole2 development
+
+%description -l pt_BR static
+Bibliotecas est·ticas para desenvolvimento com libole2
 
 %prep
 %setup -q
