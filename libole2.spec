@@ -19,7 +19,7 @@ Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A library containing functionality to manipulate OLE2 Structured
-Storage files. It is used by Gnumeric from Gnome, AbiWord from
+Storage files. It is used by Gnumeric from GNOME, AbiWord from
 AbiSuite and by other programs.
 
 %description -l es
