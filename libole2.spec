@@ -10,6 +10,7 @@ Release:	4
 License:	GPL
 Group:		Development/Libraries
 Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libole2/0.2/%{name}-%{version}.tar.bz2
+# Source0-md5:	1370a4cea876e8579c1052992ae75f79
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	glib-devel
