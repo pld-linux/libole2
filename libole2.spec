@@ -144,7 +144,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz doc/{*.txt.gz,html/*}
 %attr(755,root,root) %{_bindir}/libole2-config
 %attr(755,root,root) %{_libdir}/lib*.so
-%attr(755,root,root) %{_libdir}/lib*.la
+%{_libdir}/lib*.la
 %{_libdir}/libole2Conf.sh
 %{_aclocaldir}/*
 %{_includedir}/*
