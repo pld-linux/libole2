@@ -4,7 +4,7 @@ Summary(pl):	Biblioteka obs³uguj±ca obiekty OLE2
 Summary(pt_BR):	libole2 fornece uma API para acessar objetos OLE2
 Name:		libole2
 Version:	0.2.4
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
@@ -106,7 +106,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	libole2aclocaldir=%{_aclocaldir}
-
+install -d $RPM_BUILD_ROOT%{_prefix}/X11R6/lib
+# that's where gnome-config will be looking for it
+mv $RPM_BUILD_ROOT%{_libdir}/libole2Conf.sh $RPM_BUILD_ROOT%{_prefix}/X11R6/lib
 gzip -9nf README doc/*.txt
 
 %clean
@@ -118,14 +120,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
-%{_datadir}/*
+%{_datadir}/libole2
 
 %files devel
 %defattr(644,root,root,755)
 %doc *.gz doc/{*.txt.gz,html/*}
 %attr(755,root,root) %{_bindir}/libole2-config
 %attr(755,root,root) %{_libdir}/lib*.so
-%attr(755,root,root) %{_libdir}/libole2Conf.sh
+%attr(755,root,root) %{_libdir}/lib*.la
+%{_prefix}/X11R6/lib/libole2Conf.sh
 %{_aclocaldir}/*
 %{_includedir}/*
 
