@@ -49,7 +49,9 @@ Libole2 static libraries.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	libole2aclocaldir=%{_aclocaldir}
 
 gzip -9nf README \
 	doc/{*txt,html/*}
