@@ -19,7 +19,7 @@ AbiSuite and by other programs.
 Summary:	Libraries, includes, etc to develop libole2 applications
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
-Requires:	%{name} = %{verson}
+Requires:	%{name} = %{versin}
 
 %description devel
 Libraries, include files, etc you can use to develop libole2
@@ -29,7 +29,7 @@ applications.
 Summary:	Libole2 static libraries
 Group:		X11/Libraries
 Group(pl):	X11/Biblioteki
-Requires:	%{name} = %{verson}
+Requires:	%{name} = %{versin}
 
 %description static
 Libole2 static libraries.
