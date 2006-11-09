@@ -66,7 +66,7 @@ Summary(pt_BR):	Bibliotecas e outros arquivos necessАrios para desenvolvimento
 Summary(ru):	Файлы для разработки приложений, использующих libole2
 Summary(uk):	Файли для розробки програм, як╕ користуються libole2
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Include files etc. you can use to develop libole2 applications.
@@ -91,7 +91,7 @@ Summary(pt_BR):	Bibliotecas estАticas para desenvolvimento com libole2
 Summary(ru):	Статические библиотеки для разработки приложений, использующих libole2
 Summary(uk):	Статичн╕ б╕бл╕отеки для розробки програм, як╕ користуються libole2
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Libole2 static libraries.
