@@ -1,0 +1,2 @@
+- pass %{_aclocaldir} in libole2aclocaldir in "make install" for install
+  aclocal files in proper path.
