@@ -1,9 +1,9 @@
 Summary:	Structured Storage OLE2 library
-Summary(es):	libole2 fornece una API para acessar objetos OLE2
-Summary(pl):	Biblioteka obsЁuguj╠ca obiekty OLE2
-Summary(pt_BR):	libole2 fornece uma API para acessar objetos OLE2
-Summary(ru):	Библиотека структурированного хранения OLE2
-Summary(uk):	Б╕бл╕отека структурованого збер╕гання OLE2
+Summary(es.UTF-8):   libole2 fornece una API para acessar objetos OLE2
+Summary(pl.UTF-8):   Biblioteka obsе┌ugujд┘ca obiekty OLE2
+Summary(pt_BR.UTF-8):   libole2 fornece uma API para acessar objetos OLE2
+Summary(ru.UTF-8):   п▒п╦п╠п╩п╦п╬я┌п╣п╨п╟ я│я┌я─я┐п╨я┌я┐я─п╦я─п╬п╡п╟п╫п╫п╬пЁп╬ я┘я─п╟п╫п╣п╫п╦я▐ OLE2
+Summary(uk.UTF-8):   п▒я√п╠п╩я√п╬я┌п╣п╨п╟ я│я┌я─я┐п╨я┌я┐я─п╬п╡п╟п╫п╬пЁп╬ п╥п╠п╣я─я√пЁп╟п╫п╫я▐ OLE2
 Name:		libole2
 Version:	2.2.8
 Release:	1
@@ -24,91 +24,91 @@ A library containing functionality to manipulate OLE2 Structured
 Storage files. It is used by Gnumeric from GNOME, AbiWord from
 AbiSuite and by other programs.
 
-%description -l es
-libole2 fornece una API para acessar objetos OLE2 como И usado nos
-componentes da Microsoft. Algunos ejemplos que usan este sistema sЦo
+%description -l es.UTF-8
+libole2 fornece una API para acessar objetos OLE2 como ц╘ usado nos
+componentes da Microsoft. Algunos ejemplos que usan este sistema sцёo
 os formatos dos aplicativos Excel, Word, Powerpoint e Visio.
 
-%description -l pl
-Bibliotek zawieraj╠ca funkcje do obrСbki plikСw OLE2 Structured
-Storage. Jest u©ywana przez Gnumerica z GNOME, AbiWorda z AbiSuite
+%description -l pl.UTF-8
+Bibliotek zawierajд┘ca funkcje do obrцЁbki plikцЁw OLE2 Structured
+Storage. Jest uе╪ywana przez Gnumerica z GNOME, AbiWorda z AbiSuite
 oraz przez inne programy.
 
-%description -l pt_BR
-libole2 fornece uma API para acessar objetos OLE2 como И usado nos
-componentes da Microsoft. Alguns exemplos que usam este sistema sЦo os
+%description -l pt_BR.UTF-8
+libole2 fornece uma API para acessar objetos OLE2 como ц╘ usado nos
+componentes da Microsoft. Alguns exemplos que usam este sistema sцёo os
 formatos dos aplicativos Excel, Word, Powerpoint e Visio.
 
-%description -l ru
-Современные приложения имеют потребность в сохранении множества типов
-данных. Один из способов достичь этого - использовать подход "файловая
-система внутри файла".
+%description -l ru.UTF-8
+п║п╬п╡я─п╣п╪п╣п╫п╫я▀п╣ п©я─п╦п╩п╬п╤п╣п╫п╦я▐ п╦п╪п╣я▌я┌ п©п╬я┌я─п╣п╠п╫п╬я│я┌я▄ п╡ я│п╬я┘я─п╟п╫п╣п╫п╦п╦ п╪п╫п╬п╤п╣я│я┌п╡п╟ я┌п╦п©п╬п╡
+п╢п╟п╫п╫я▀я┘. п·п╢п╦п╫ п╦п╥ я│п©п╬я│п╬п╠п╬п╡ п╢п╬я│я┌п╦я┤я▄ я█я┌п╬пЁп╬ - п╦я│п©п╬п╩я▄п╥п╬п╡п╟я┌я▄ п©п╬п╢я┘п╬п╢ "я└п╟п╧п╩п╬п╡п╟я▐
+я│п╦я│я┌п╣п╪п╟ п╡п╫я┐я┌я─п╦ я└п╟п╧п╩п╟".
 
-Внутри OLE2 файла есть "потоки" (файлы) и каталоги. Используя libole2
-можно легко путешествовать такой файловой системой, создавать,
-записывать, читать и удалять в ней файлы, создавать и удалять
-каталоги.
+п▓п╫я┐я┌я─п╦ OLE2 я└п╟п╧п╩п╟ п╣я│я┌я▄ "п©п╬я┌п╬п╨п╦" (я└п╟п╧п╩я▀) п╦ п╨п╟я┌п╟п╩п╬пЁп╦. п≤я│п©п╬п╩я▄п╥я┐я▐ libole2
+п╪п╬п╤п╫п╬ п╩п╣пЁп╨п╬ п©я┐я┌п╣я┬п╣я│я┌п╡п╬п╡п╟я┌я▄ я┌п╟п╨п╬п╧ я└п╟п╧п╩п╬п╡п╬п╧ я│п╦я│я┌п╣п╪п╬п╧, я│п╬п╥п╢п╟п╡п╟я┌я▄,
+п╥п╟п©п╦я│я▀п╡п╟я┌я▄, я┤п╦я┌п╟я┌я▄ п╦ я┐п╢п╟п╩я▐я┌я▄ п╡ п╫п╣п╧ я└п╟п╧п╩я▀, я│п╬п╥п╢п╟п╡п╟я┌я▄ п╦ я┐п╢п╟п╩я▐я┌я▄
+п╨п╟я┌п╟п╩п╬пЁп╦.
 
-%description -l uk
-Сучасн╕ прикладн╕ програми мають необх╕дн╕сть збер╕гати багато тип╕в
-даних. Один ╕з способ╕в досягти цього - використовувати п╕дх╕д
-"файлова система всередин╕ файлу".
+%description -l uk.UTF-8
+п║я┐я┤п╟я│п╫я√ п©я─п╦п╨п╩п╟п╢п╫я√ п©я─п╬пЁя─п╟п╪п╦ п╪п╟я▌я┌я▄ п╫п╣п╬п╠я┘я√п╢п╫я√я│я┌я▄ п╥п╠п╣я─я√пЁп╟я┌п╦ п╠п╟пЁп╟я┌п╬ я┌п╦п©я√п╡
+п╢п╟п╫п╦я┘. п·п╢п╦п╫ я√п╥ я│п©п╬я│п╬п╠я√п╡ п╢п╬я│я▐пЁя┌п╦ я├я▄п╬пЁп╬ - п╡п╦п╨п╬я─п╦я│я┌п╬п╡я┐п╡п╟я┌п╦ п©я√п╢я┘я√п╢
+"я└п╟п╧п╩п╬п╡п╟ я│п╦я│я┌п╣п╪п╟ п╡я│п╣я─п╣п╢п╦п╫я√ я└п╟п╧п╩я┐".
 
-Всередин╕ OLE2 файлу ╓ "потоки" (файли) та каталоги. Використовуючи
-libole2 можна легко подорожувати такою файловою системою, створювати,
-записувати, читати та видаляти в н╕й файли, створювати та видаляти
-каталоги.
+п▓я│п╣я─п╣п╢п╦п╫я√ OLE2 я└п╟п╧п╩я┐ я■ "п©п╬я┌п╬п╨п╦" (я└п╟п╧п╩п╦) я┌п╟ п╨п╟я┌п╟п╩п╬пЁп╦. п▓п╦п╨п╬я─п╦я│я┌п╬п╡я┐я▌я┤п╦
+libole2 п╪п╬п╤п╫п╟ п╩п╣пЁп╨п╬ п©п╬п╢п╬я─п╬п╤я┐п╡п╟я┌п╦ я┌п╟п╨п╬я▌ я└п╟п╧п╩п╬п╡п╬я▌ я│п╦я│я┌п╣п╪п╬я▌, я│я┌п╡п╬я─я▌п╡п╟я┌п╦,
+п╥п╟п©п╦я│я┐п╡п╟я┌п╦, я┤п╦я┌п╟я┌п╦ я┌п╟ п╡п╦п╢п╟п╩я▐я┌п╦ п╡ п╫я√п╧ я└п╟п╧п╩п╦, я│я┌п╡п╬я─я▌п╡п╟я┌п╦ я┌п╟ п╡п╦п╢п╟п╩я▐я┌п╦
+п╨п╟я┌п╟п╩п╬пЁп╦.
 
 %package devel
 Summary:	Includes etc. to develop libole2 applications
-Summary(pl):	Pliki nagЁСwkowe do tworzenia aplikacji u©ywaj╠cych libole2
-Summary(pt_BR):	Bibliotecas e outros arquivos necessАrios para desenvolvimento
-Summary(ru):	Файлы для разработки приложений, использующих libole2
-Summary(uk):	Файли для розробки програм, як╕ користуються libole2
+Summary(pl.UTF-8):   Pliki nagе┌цЁwkowe do tworzenia aplikacji uе╪ywajд┘cych libole2
+Summary(pt_BR.UTF-8):   Bibliotecas e outros arquivos necessц║rios para desenvolvimento
+Summary(ru.UTF-8):   п╓п╟п╧п╩я▀ п╢п╩я▐ я─п╟п╥я─п╟п╠п╬я┌п╨п╦ п©я─п╦п╩п╬п╤п╣п╫п╦п╧, п╦я│п©п╬п╩я▄п╥я┐я▌я┴п╦я┘ libole2
+Summary(uk.UTF-8):   п╓п╟п╧п╩п╦ п╢п╩я▐ я─п╬п╥я─п╬п╠п╨п╦ п©я─п╬пЁя─п╟п╪, я▐п╨я√ п╨п╬я─п╦я│я┌я┐я▌я┌я▄я│я▐ libole2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Include files etc. you can use to develop libole2 applications.
 
-%description devel -l pl
-Pliki nagЁСwkowe i inne do tworzenia aplikacji u©ywaj╠cych libole2.
+%description devel -l pl.UTF-8
+Pliki nagе┌цЁwkowe i inne do tworzenia aplikacji uе╪ywajд┘cych libole2.
 
-%description devel -l pt_BR
-Bibliotecas e arquivos de inclusЦo necessАrios para o desenvolvimento
-de aplicaГУes baseadas na libole2.
+%description devel -l pt_BR.UTF-8
+Bibliotecas e arquivos de inclusцёo necessц║rios para o desenvolvimento
+de aplicaц╖ц╣es baseadas na libole2.
 
-%description devel -l ru
-Файлы для разработки приложений, использующих возможности libole2.
+%description devel -l ru.UTF-8
+п╓п╟п╧п╩я▀ п╢п╩я▐ я─п╟п╥я─п╟п╠п╬я┌п╨п╦ п©я─п╦п╩п╬п╤п╣п╫п╦п╧, п╦я│п©п╬п╩я▄п╥я┐я▌я┴п╦я┘ п╡п╬п╥п╪п╬п╤п╫п╬я│я┌п╦ libole2.
 
-%description devel -l uk
-Файли для розробки програм, як╕ користуються можливостями libole2.
+%description devel -l uk.UTF-8
+п╓п╟п╧п╩п╦ п╢п╩я▐ я─п╬п╥я─п╬п╠п╨п╦ п©я─п╬пЁя─п╟п╪, я▐п╨я√ п╨п╬я─п╦я│я┌я┐я▌я┌я▄я│я▐ п╪п╬п╤п╩п╦п╡п╬я│я┌я▐п╪п╦ libole2.
 
 %package static
 Summary:	Libole2 static libraries
-Summary(pl):	Statyczne biblioteki libole2
-Summary(pt_BR):	Bibliotecas estАticas para desenvolvimento com libole2
-Summary(ru):	Статические библиотеки для разработки приложений, использующих libole2
-Summary(uk):	Статичн╕ б╕бл╕отеки для розробки програм, як╕ користуються libole2
+Summary(pl.UTF-8):   Statyczne biblioteki libole2
+Summary(pt_BR.UTF-8):   Bibliotecas estц║ticas para desenvolvimento com libole2
+Summary(ru.UTF-8):   п║я┌п╟я┌п╦я┤п╣я│п╨п╦п╣ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╦ п╢п╩я▐ я─п╟п╥я─п╟п╠п╬я┌п╨п╦ п©я─п╦п╩п╬п╤п╣п╫п╦п╧, п╦я│п©п╬п╩я▄п╥я┐я▌я┴п╦я┘ libole2
+Summary(uk.UTF-8):   п║я┌п╟я┌п╦я┤п╫я√ п╠я√п╠п╩я√п╬я┌п╣п╨п╦ п╢п╩я▐ я─п╬п╥я─п╬п╠п╨п╦ п©я─п╬пЁя─п╟п╪, я▐п╨я√ п╨п╬я─п╦я│я┌я┐я▌я┌я▄я│я▐ libole2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Libole2 static libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczne biblioteki libole2.
 
-%description static -l pt_BR
-Bibliotecas estАticas para desenvolvimento com libole2
+%description static -l pt_BR.UTF-8
+Bibliotecas estц║ticas para desenvolvimento com libole2
 
-%description static -l ru
-Статические библиотеки для разработки приложений, использующих
-возможности libole2.
+%description static -l ru.UTF-8
+п║я┌п╟я┌п╦я┤п╣я│п╨п╦п╣ п╠п╦п╠п╩п╦п╬я┌п╣п╨п╦ п╢п╩я▐ я─п╟п╥я─п╟п╠п╬я┌п╨п╦ п©я─п╦п╩п╬п╤п╣п╫п╦п╧, п╦я│п©п╬п╩я▄п╥я┐я▌я┴п╦я┘
+п╡п╬п╥п╪п╬п╤п╫п╬я│я┌п╦ libole2.
 
-%description static -l uk
-Статичн╕ б╕бл╕отеки для розробки програм, як╕ користуються
-можливостями libole2.
+%description static -l uk.UTF-8
+п║я┌п╟я┌п╦я┤п╫я√ п╠я√п╠п╩я√п╬я┌п╣п╨п╦ п╢п╩я▐ я─п╬п╥я─п╬п╠п╨п╦ п©я─п╬пЁя─п╟п╪, я▐п╨я√ п╨п╬я─п╦я│я┌я┐я▌я┌я▄я│я▐
+п╪п╬п╤п╩п╦п╡п╬я│я┌я▐п╪п╦ libole2.
 
 %prep
 %setup -q
