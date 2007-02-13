@@ -1,9 +1,9 @@
 Summary:	Structured Storage OLE2 library
-Summary(es.UTF-8):   libole2 fornece una API para acessar objetos OLE2
-Summary(pl.UTF-8):   Biblioteka obsługująca obiekty OLE2
-Summary(pt_BR.UTF-8):   libole2 fornece uma API para acessar objetos OLE2
-Summary(ru.UTF-8):   Библиотека структурированного хранения OLE2
-Summary(uk.UTF-8):   Бібліотека структурованого зберігання OLE2
+Summary(es.UTF-8):	libole2 fornece una API para acessar objetos OLE2
+Summary(pl.UTF-8):	Biblioteka obsługująca obiekty OLE2
+Summary(pt_BR.UTF-8):	libole2 fornece uma API para acessar objetos OLE2
+Summary(ru.UTF-8):	Библиотека структурированного хранения OLE2
+Summary(uk.UTF-8):	Бібліотека структурованого зберігання OLE2
 Name:		libole2
 Version:	2.2.8
 Release:	1
@@ -61,10 +61,10 @@ libole2 можна легко подорожувати такою файлово
 
 %package devel
 Summary:	Includes etc. to develop libole2 applications
-Summary(pl.UTF-8):   Pliki nagłówkowe do tworzenia aplikacji używających libole2
-Summary(pt_BR.UTF-8):   Bibliotecas e outros arquivos necessários para desenvolvimento
-Summary(ru.UTF-8):   Файлы для разработки приложений, использующих libole2
-Summary(uk.UTF-8):   Файли для розробки програм, які користуються libole2
+Summary(pl.UTF-8):	Pliki nagłówkowe do tworzenia aplikacji używających libole2
+Summary(pt_BR.UTF-8):	Bibliotecas e outros arquivos necessários para desenvolvimento
+Summary(ru.UTF-8):	Файлы для разработки приложений, использующих libole2
+Summary(uk.UTF-8):	Файли для розробки програм, які користуються libole2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -86,10 +86,10 @@ de aplicações baseadas na libole2.
 
 %package static
 Summary:	Libole2 static libraries
-Summary(pl.UTF-8):   Statyczne biblioteki libole2
-Summary(pt_BR.UTF-8):   Bibliotecas estáticas para desenvolvimento com libole2
-Summary(ru.UTF-8):   Статические библиотеки для разработки приложений, использующих libole2
-Summary(uk.UTF-8):   Статичні бібліотеки для розробки програм, які користуються libole2
+Summary(pl.UTF-8):	Statyczne biblioteki libole2
+Summary(pt_BR.UTF-8):	Bibliotecas estáticas para desenvolvimento com libole2
+Summary(ru.UTF-8):	Статические библиотеки для разработки приложений, использующих libole2
+Summary(uk.UTF-8):	Статичні бібліотеки для розробки програм, які користуються libole2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
