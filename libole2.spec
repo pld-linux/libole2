@@ -7,9 +7,9 @@ Summary(uk.UTF-8):	Бібліотека структурованого збер�
 Name:		libole2
 Version:	2.2.8
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Libraries
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/libole2/2.2/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/libole2/2.2/%{name}-%{version}.tar.bz2
 Patch0:		%{name}-acfix.patch
 # Source0-md5:	0db6170f45795bf3e34f12d52bb598a1
 BuildRequires:	autoconf
